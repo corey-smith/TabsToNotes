@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="tabTransposer.js"></script>
+	<script type="text/javascript" src="tabLogic.js"></script>
+	<script type="text/javascript" src="noteLogic.js"></script>
+	<link rel="stylesheet" type="text/css" href="tabTransposer.css"></link>
+        <meta charset="utf-8" />
+        <title></title>
+</head>
+    <body>
+		<div class="tabs">
+			<ul class="tab-links">
+				<li class="active"><a href="#tab1">Transposer</a></li>
+				<li><a href="#tab2">Tab</a></li>
+				<li><a href="#tab3">Notes</a></li>
+				<li><a href="#tab4">About</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="tab1" class="tab active">
+					<h1>
+						Tab Transposer
+					</h1>
+					<table style="width:100%">
+						<tr>
+							<td>
+								<div id = "buttonDiv1">
+									<button id = "transposeBtn" name = "transposeBtn" onclick = "transpose()">Transpose To Tab</button>
+									<button id = "clearTextBtn" name = "clearTextBtn" onclick = "clearText()">Clear Text</button>
+								</div>
+							</td>
+							<td>
+								<div id = "buttonDiv2">
+									<button id = "printTabBtn" name = "printTabBtn" onclick = "printTabToPage()">Display Tab On Page</button>
+									<button id = "printNotesBtn" name = "printNotesBtn" onclick = "printNotesToPage()">Display Notes On Page</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<textarea id = "fromText" name = "fromText" rows="40" cols="80"></textarea>
+							</td>
+							<td>
+								<textarea id = "toText" name = "toText" rows="40" cols="80"></textarea>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="tab2" class="tab">
+					<h1>
+						Tab Text
+					</h1>
+					<p id = "tabPageText" style="WHITE-SPACE:pre">No Tab To Display</p>
+				</div>
+				<div id="tab3" class="tab">
+					<p>No Notes to Display</p>
+					<canvas id = "notesCanvas"/>
+				</div>
+				<div id="tab4" class="tab">
+					<p>Tab #4 About Page</p>
+					<p>Donec pulvinar neque sed semper lacinia. Curabitur lacinia ullamcorper nibh; quis imperdiet velit eleifend ac. Donec blandit mauris eget aliquet lacinia! Donec pulvinar massa interdum ri.</p>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

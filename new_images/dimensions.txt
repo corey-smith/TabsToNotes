@@ -1,0 +1,4 @@
+clefs.png 35x130
+staff.png 25x130
+noteUp.png 15x30
+noteDown.png 15x30
